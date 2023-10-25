@@ -50,6 +50,10 @@
                                 <buttonConfiguration key="configuration" style="filled" title="LOG IN">
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0iH-QR-rKp"/>
+                                    <action selector="loginButton:" destination="J6F-0D-2VL" eventType="touchUpInside" id="xO0-8u-iF7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -71,13 +75,14 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="J6F-0D-2VL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1332" y="-546"/>
+            <point key="canvasLocation" x="-1492" y="-92"/>
         </scene>
-        <!--View Controller-->
+        <!--Search Controller-->
         <scene sceneID="C8W-fK-gjT">
             <objects>
-                <viewController id="Sne-4R-Fep" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Sne-4R-Fep" customClass="SearchController" customModule="CarRentalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8UB-5T-hKr">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,12 +93,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BKU-Ds-f42" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1378" y="-204"/>
+            <point key="canvasLocation" x="1247" y="-204"/>
         </scene>
-        <!--View Controller-->
+        <!--Vehicles Controller-->
         <scene sceneID="7mm-ca-rnY">
             <objects>
-                <viewController id="BBm-ww-htz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VehiclesController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BBm-ww-htz" customClass="VehiclesController" customModule="CarRentalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="52R-Kt-bUT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,12 +109,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nAj-UD-U0D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2131" y="-926"/>
+            <point key="canvasLocation" x="1247" y="-846"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bXW-2c-m0Z">
             <objects>
-                <tabBarController id="ZYA-lk-1ev" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZYA-lk-1ev" customClass="TabBarController" customModule="CarRentalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fcx-gw-KxR">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -123,13 +128,13 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8HN-Lf-dly" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-321" y="-546"/>
+            <point key="canvasLocation" x="-560" y="-91"/>
         </scene>
-        <!--Item 1-->
+        <!--Vehicles-->
         <scene sceneID="QHW-fY-yNQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eOE-ed-Z2z" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="nHJ-Tp-QTj"/>
+                    <tabBarItem key="tabBarItem" title="Vehicles" selectedImage="vehiclesTab" id="nHJ-Tp-QTj"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4RQ-Kw-2Hh">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -144,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="514" y="-846"/>
         </scene>
-        <!--View Controller-->
+        <!--Account Controller-->
         <scene sceneID="RGV-4U-o1c">
             <objects>
-                <viewController id="LuT-kO-d5x" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccountController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LuT-kO-d5x" customClass="AccountController" customModule="CarRentalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C6V-9J-woT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,11 +165,11 @@
             </objects>
             <point key="canvasLocation" x="1247" y="451"/>
         </scene>
-        <!--Item 2-->
+        <!--Search-->
         <scene sceneID="2yk-Ri-aEc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ivI-WI-lxP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="AT8-PI-O4V"/>
+                    <tabBarItem key="tabBarItem" title="Search" selectedImage="searchTab" id="AT8-PI-O4V"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Oh1-Sz-mOe">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -179,11 +184,11 @@
             </objects>
             <point key="canvasLocation" x="514" y="-204"/>
         </scene>
-        <!--Item-->
+        <!--Account-->
         <scene sceneID="eka-SF-CtY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E4M-H1-AIl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="KR4-4m-FPd"/>
+                    <tabBarItem key="tabBarItem" title="Account" selectedImage="accuntTab" id="KR4-4m-FPd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8li-b0-d64">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -200,8 +205,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="accuntTab" width="29" height="28"/>
         <image name="launchBackground" width="414" height="896"/>
         <image name="logo" width="122" height="146"/>
+        <image name="searchTab" width="28" height="28"/>
+        <image name="vehiclesTab" width="28" height="28"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

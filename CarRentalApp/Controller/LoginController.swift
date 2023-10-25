@@ -1,21 +1,21 @@
 //
-//  ViewController.swift
+//  LoginController.swift
 //  CarRentalApp
 //
-//  Created by Samxal Quliyev  on 21.10.23.
+//  Created by Gurban Gulmammadov on 24.10.23.
 //
 
 import UIKit
 
 class LoginController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-     
-        
     }
-
     
+    @IBAction func loginButton(_ sender: Any)
+        {
+            let controller = storyboard?.instantiateViewController(withIdentifier: "TabBarController") as! TabBarController
+            navigationController?.show(controller, sender: nil)
+        } 
 }
-
