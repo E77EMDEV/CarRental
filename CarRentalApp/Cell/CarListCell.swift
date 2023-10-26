@@ -8,10 +8,15 @@
 import UIKit
 
 class CarListCell: UICollectionViewCell {
-
+    
+    @IBOutlet weak var carModelLabel: UILabel!
+    @IBOutlet weak var Car_1: UIImageView!
+    @IBOutlet weak var carCountLabel: UILabel!
+    @IBOutlet weak var carListView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        carListView.layer.cornerRadius = 20
     }
-
 }

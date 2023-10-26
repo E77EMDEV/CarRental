@@ -8,7 +8,9 @@
 import UIKit
 
 class VehiclesController: UIViewController {
-
+    @IBOutlet weak var carScrollView: UICollectionView!
+    @IBOutlet weak var carChoiceView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
